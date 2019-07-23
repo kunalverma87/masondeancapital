@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Start Subpage Hero -->
+<div class="subpage-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Contact Us</h1>
+                <h5>How can we help?</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Subpage Hero -->
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            @Html.Partial("_SupportNavigation")
+            <div class="col-md-6 col-12">
+                @Html.Partial("_BreadCrumbs")
+
+                <h2>Fill Out the Contact Form Below</h2>
+                <h5>All Fields are Required</h5>
+                <hr />
+                <fieldset>
+                    <label class="required">Full Name</label>
+                    <input type="text" name="name" required />
+                </fieldset>
+
+                <fieldset>
+                    <label class="required">Email Address</label>
+                    <input type="email" name="email" required />
+                </fieldset>
+
+                <fieldset>
+                    <label class="required">Phone Number</label>
+                    <input type="text" name="phone" required />
+                </fieldset>
+
+                <fieldset>
+                    <label class="required">Subject</label>
+                    <input type="text" name="subject" required />
+                </fieldset>
+
+                <fieldset>
+                    <label class="required">Message</label>
+                    <textarea></textarea>
+                </fieldset>
+                <hr />
+
+                <button class="btn btn-primary" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+

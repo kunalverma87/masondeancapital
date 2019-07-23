@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Metals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Start Subpage Hero -->
+<div class="subpage-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Metals</h1>
+                <h5>We Provide Products for Your Every Need</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Subpage Hero -->
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+
+            @Html.Partial("_ProductsNavigation")
+            <div class="col-md-9">
+                @Html.Partial("_BreadCrumbs")
+
+                <h2>Valuable Metals</h2>
+                <h5>Looking ahead to the future.</h5>
+
+                <p>
+                    Mason Dean Capital offer traders’ access to both Gold and Silver. The volatility in precious metals enable traders many opportunities in both rising and failing markets.
+                </p>
+
+                <img src="~/images/metals-image.jpg" class="full-width" />
+                <br /><br />
+                <h2>Benefits of trading MEtals:</h2>
+
+                <ul class="arrow-list">
+                    <li>Enjoy massive market liquidity</li>
+                    <li>Utilize fundamental analysis to study price movement as metals often moved by geo-political factors</li>
+                    <li>Trade within a 24 hour, 5 day a week market</li>
+                    <li>Ability to hedge against existing currency position</li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+

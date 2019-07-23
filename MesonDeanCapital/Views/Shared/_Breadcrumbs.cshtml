@@ -1,0 +1,12 @@
+﻿<div class="breadcrumbs">
+    <a href="/Home">Mason Dean Capital</a>
+    @if (ViewContext.RouteData.Values["action"].ToString() == "Index") {
+        @:// @ViewContext.RouteData.Values["controller"].ToString()
+    } else if (ViewContext.RouteData.Values["controller"].ToString() != "Home") {
+        @:// @Html.ActionLink(ViewContext.RouteData.Values["controller"].ToString(), "Index", ViewContext.RouteData.Values["controller"].ToString())
+    }
+
+    @if (ViewContext.RouteData.Values["action"].ToString() != "Index") {
+        @:// @ViewContext.RouteData.Values["action"].ToString()
+    }
+</div>

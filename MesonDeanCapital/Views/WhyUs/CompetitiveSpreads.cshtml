@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Competitive Spreads";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="http://www.masondeancapital.com/Resources/css/spreads-widget.css" />
+<script type="text/javascript" src="http://www.masondeancapital.com/Resources/js/moment.js"></script>
+<script type="text/javascript" src="http://www.masondeancapital.com/Resources/js/moment-timezone.js"></script>
+<script type="text/javascript" src="http://www.masondeancapital.com/Resources/js/spreads-widget.js"></script>
+<script src="http://www.masondeancapital.com/Resources/js/spreads-widget.js"></script>
+<script>
+    $(function () {
+        spreadWidgetStart('EURUSD,EURJPY,USDJPY,EURCHF,GBPUSD,AUDUSD,EURAUD,USDCAD,USDCHF,NZDUSD');
+    })
+</script>
+
+
+<!-- Start Subpage Hero -->
+<div class="subpage-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Competitive Spreads</h1>
+                <h5>We Are Mason Dean Capital</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Subpage Hero -->
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+
+            @Html.Partial("_WhyUsNavigation")
+            <div class="col-md-9">
+                @Html.Partial("_BreadCrumbs")
+
+                <h2>Building Relationships</h2>
+                <h5>Looking ahead to the future.</h5>
+
+                <p>
+                    Mason Dean Capital (MDC) is an 'Independent' Introducing Broker which means that they are able to maintain one or more relationships with selected dealing firms. In addition, this allows Mason Dean Capital to offer the customer a vast choice of trading platforms.
+                </p>
+
+                <img src="~/images/spreads-flow.png" class="full-width" />
+
+                <p>
+                    When an MDC customer places a trade, it is passed through to proprietary software which aggregates the best bid/offer quote from over a hundred contributors including Top Tier 1 banks. Due to the level of sophistication in the aggregation software and access to deep liquidity, the customer trade is able to be executed seamlessly within a very narrow spread.
+                </p>
+
+                <hr />
+
+                <!-- Live Spread Widget --->
+                <h5>Live Spreads</h5>
+                <div id="spreads">
+                    <div class="spreads-widget-wrap">
+                        <table id="spreadWidgetTable" class="spreadWidgetTable" style="font-size:14px;font-family:Roboto"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
